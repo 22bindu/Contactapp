@@ -3,12 +3,65 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { route } from 'fontawesome';
+import 'bootstrap/dist/css/bootstrap.css';
+//import 'mdbootstrap/css/mdb.css';
+import 'mdbootstrap/js/jquery.min.js';
+import 'mdbootstrap/js/bootstrap.min.js';
+// import Popper from './popper.js';
+// import 'fontawesome-free/css/fontawesome.css';
+import '@fortawesome/fontawesome-free/css/all.css';
+import Login from './components/login/Login';
+import Register from './components/login/Register';
+import Contactlist from './components/Contact/contactlist/Contactlist';
+import CreateContact from './components/Contact/createContact/CreateContact';
+import EditContact from './components/Contact/editContact/EditContact';
+
+const router = createBrowserRouter([
+
+  {
+    path:"/",
+    element:<App/>
+  },
+  {
+    path:"/Login",
+    element:<Login/>
+  },
+  {
+    path:"/Register",
+    element:<Register/>
+  },
+  {
+    path:"/Contactlist",
+    element:<Contactlist/>
+  },
+  {
+    path:"/CreateContact",
+    element:<CreateContact/>
+  },
+  {
+    path:"/EditContact",
+    element:<EditContact/>
+  },
+  {
+    path:"/Login",
+    element:<Login/>
+  },
+  {
+    path:"/Login",
+    element:<Login/>
+  },
+  {
+    path:"/Login",
+    element:<Login/>
+  },
+
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+ <RouterProvider router={router} />
 );
 
 // If you want to start measuring performance in your app, pass a function

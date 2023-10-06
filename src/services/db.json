@@ -1,0 +1,49 @@
+{
+  "contact": [
+    {
+      "id": "ABC0123",
+      "name": "Asindu",
+      "email": "ABC0123",
+      "mobile": "7989926123",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_-TwDTEhGz0KFBx1mdAS7B_P_MQ3eNNIzdA&usqp=CAU",
+      "company": "Sagarsoft"
+    },
+    {
+      "id": "ABC01233",
+      "name": "Abindu",
+      "email": "ABC013@gmail.com",
+      "mobile": "7989916245",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_-TwDTEhGz0KFBx1mdAS7B_P_MQ3eNNIzdA&usqp=CAU",
+      "company": "Sagarsol"
+    },
+    {
+      "id": "ABC012",
+      "name": "Abindu",
+      "email": "ABC013@gmail.com",
+      "mobile": "7989916245",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_-TwDTEhGz0KFBx1mdAS7B_P_MQ3eNNIzdA&usqp=CAU",
+      "company": "Sagarsol"
+    },
+    {
+      "id": "naIT5_C"
+    },
+    {
+      "id": "fqF5uPY"
+    },
+    {
+      "id": "DiVs65h"
+    },
+    {
+      "id": "8lwX2Nr"
+    },
+    {
+      "id": "kv0AH09"
+    },
+    {
+      "id": "1zS-gc-"
+    },
+    {
+      "id": "LDoZYMU"
+    }
+  ]
+}
