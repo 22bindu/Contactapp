@@ -1,6 +1,7 @@
 
 import Navbar from '../src/navbar/Navbar';
 import SectionTwo from './navbar/SectionTwo';
+import './App.css';
 
 
 function App() {

@@ -1,41 +1,34 @@
 import { Link } from "react-router-dom";
 import React from "react";
-import SectionTwo from "./SectionTwo";
+// import SectionTwo from "./SectionTwo";
+
 let Navbar = () => {
   return (
     <React.Fragment>
-      <nav class="navbar navbar-expand-lg navbar-light bg-vilt text-white">
-        <div class="container">
-       <Link to={"/"} class="navbar-brand me-2 text-white" href="https://mdbgo.com/"> 
-        SaveAcontact
-          </Link>
-
-          {/* <div class="collapse navbar-collapse " id="navbarButtonsExample">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Dashboard
-                </a>
-              </li>
-            </ul> */}
-
-            <div class="d-flex align-items-center">
-              <Link to={'/Login'}
-              type="button" class="btn btn-link px-3 me-2 text-white">
-                Login
+      
+       
+         
+            <div className="nav1">
+            <div className="container">
+              <Link to={"/"} className=" text-white h5 text-dec">
+                Save<span className="h3 text-danger">A</span>contact
               </Link>
-              <button type="button" class="btn btn-inf me-3 text-white">
-                Sign up for free
-              </button>
-             
-              <i class="fa-brands fa-facebook-f text-white mx-3"></i>
-                <i class="fa-brands fa-twitter text-white mx-3 "></i>
-                <i class="fa-brands fa-linkedin-in text-white mx-3"></i>
+              <div className=" text-white">
+                <ul className="Snavbar nav1">
+                  <li className="mx-5">About</li>
+                  <li className="mx-5">Contact</li>
+                  <li className="mx-5">Login</li>
+                  <li className="mx-5">Register</li>
+                  <i class="fa-brands fa-facebook-f mx-3 ico"></i>
+                  <i class="fa-brands fa-twitter mx-3 ico"></i>
+                  <i class="fa-brands fa-instagram mx-3 ico"></i>
+
+                </ul>
+              </div>
             </div>
           </div>
         
-      </nav>
-      {/* <SectionTwo/> */}
+  
     </React.Fragment>
   );
 };

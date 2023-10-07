@@ -1,40 +1,48 @@
 import React from "react";
-import { MDBCarousel, MDBCarouselItem } from "mdb-react-ui-kit";
+import { Link } from "react-router-dom";
 
 let SectionTwo = () => {
   return (
     <React.Fragment>
-      <MDBCarousel showIndicators showControls fade>
-      <MDBCarouselItem
-        className='w-100 d-block custom-image'
-        itemId={1}
-        src='https://st3.depositphotos.com/33542994/35552/i/450/depositphotos_355525782-stock-photo-abstract-digital-connection-dots-lines.jpg'
-        alt='...'
-      >
-        <h5>First slide label</h5>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-      </MDBCarouselItem>
-
-      <MDBCarouselItem
-        className='w-100 d-block custom-image'
-        itemId={2}
-        src='https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg'
-        alt='...'
-      >
-        <h5>Second slide label</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </MDBCarouselItem>
-
-      <MDBCarouselItem
-        className='w-100 d-block custom-image '
-        itemId={3}
-        src='https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg'
-        alt='...'
-      >
-        <h5>Third slide label</h5>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-      </MDBCarouselItem>
-    </MDBCarousel>
+      <div className="hero-img">
+        <div className="container">
+          <div class="row ">
+            <div class="col-md-4 text-white">
+             
+              <h1 class="mb-3 mar-t">
+                Welcome to <span className="text-danger">SaveAcontact</span>
+              </h1>
+              <h6 class="mb-1 my-5">
+                <p style={{lineHeight:1.5}} className="lead">
+                  This data helps Google recognize which contact to connect you
+                  with. For example, when you say things like "Hey Google, call
+                  Sam" to your Google Assistant or smart device, this data helps
+                  select the right contact to call.
+                </p>
+              </h6><Link to={'/Contactlist'}>
+              <a
+                className="btn btn-outline-light btn-md m-2"
+                href="/"
+                role="button"
+                rel="nofollow"
+                target="_blank"
+              >
+                ContactList Dashboard
+              </a></Link>
+              
+              <Link to={'/CreateContact'}>
+              <a
+                className="btn btn-outline-light btn-md m-2"
+                href="/"
+                target="_blank"
+                role="button"
+              >
+                SaveAcontact
+              </a></Link>
+            </div>
+          </div>
+        </div>
+      </div>
     </React.Fragment>
   );
 };

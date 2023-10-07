@@ -1,13 +1,14 @@
 import React from "react";
 import Mainlayout from './../../../layout/Mainlayout';
 let CreateContact=()=>{
+
     return(
         <Mainlayout>
         <React.Fragment>
-            <div className="container mt-3">
-        <h4 className="title bold">Create Contact</h4>
-        <div className="card p-3">
-        <div className="row align-items-center">
+        <div className="container w-50 ">
+       
+        <div className="card p-3  create-card ">
+            <div className="row align-items-center">
             <div className="col-md-8">
                 <form>
                     <div className="from-group col-md-8 mb-2">

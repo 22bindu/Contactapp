@@ -17,6 +17,7 @@ import Register from './components/login/Register';
 import Contactlist from './components/Contact/contactlist/Contactlist';
 import CreateContact from './components/Contact/createContact/CreateContact';
 import EditContact from './components/Contact/editContact/EditContact';
+import ViewContact from './components/Contact/viewContact/ViewContact';
 
 const router = createBrowserRouter([
 
@@ -36,6 +37,11 @@ const router = createBrowserRouter([
     path:"/Contactlist",
     element:<Contactlist/>
   },
+  {
+    path: '/ViewContact/:Contactid',
+    element: <ViewContact />
+  },
+ 
   {
     path:"/CreateContact",
     element:<CreateContact/>
