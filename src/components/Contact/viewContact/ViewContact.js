@@ -51,60 +51,31 @@ function ViewContact() {
 
               {/* <!-- Content --> */}
               <div class="card-body">
-              <div className="from-group  mb-1">
-                    <label className=""> </label>
-                    <input
-                      type="text"
-                      className="form-control"
-                      name=""
-                      value={contacts.id}
-                    />
-                  </div>
-                  <div className="from-group  mb-1">
-                    <label className=""> </label>
-                    <input
-                      type="text"
-                      className="form-control"
-                      name=""
-                      value={contacts.name}
-                    />
-                  </div>
-                  <div className="from-group  s">
-                    <label className=""> </label>
-                    <input
-                      type="email"
-                      className="form-control"
-                      name=""
-                      value={contacts.email}
-                    />
-                  </div>
-                  <div className="from-group  ">
-                    <label className=""></label>
-                    <input
-                      type="mobile"
-                      className="form-control"
-                      name=""
-                      value={contacts.mobile}
-                    />
-                  </div>
-                  <div className="from-group  ">
-                    <label className=""></label>
-                    <input
-                      type="mobile"
-                      className="form-control"
-                      name=""
-                      value={contacts.company}
-                    />
-                  </div>
-                  <ul className="list-group">
-                    <li className="list-group-item">
-                      
+            
+                  <div className="">
+                  <ul className="list-group list-group-light list-group-small ">
+                    <li className="list-group-item view-contact-ul border-0 ">
+                    <i class="fa-solid fa-id-card text-info  "></i>
+                        {contacts.id}
+                       
                     </li>
-                    <li className="list-group-item"></li>
-                    <li className="list-group-item"></li>
-                    <li className="list-group-item"></li>
-                    <li className="list-group-item"></li>
+                    <li className="list-group-item view-contact-ul border-0">
+                    <i class="fa-regular fa-envelope text-info  "></i>
+                      {contacts.email}
+                    </li>
+                    <li className="list-group-item view-contact-ul border-0">
+                    <i class="fa-solid fa-mobile text-info "></i>
+                    {contacts.mobile}
+                    </li>
+                    <li className="list-group-item  view-contact-ul border-0">
+                    <i class="fa-solid fa-building text-info "></i>
+                    {contacts.company}
+                    </li>
+                    <li className="list-group-item  view-contact-ul border-0">
+
+                    </li>
                   </ul>
+                  </div>
                 
                 {/* <pre>{JSON.stringify(contacts)}</pre> */}
           

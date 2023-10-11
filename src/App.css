@@ -197,7 +197,7 @@ img {
   border-style: none;
 }
 .testimonial-card .card-up {
-  height: 120px;
+  height: 80px;
   overflow: hidden;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
@@ -228,5 +228,8 @@ img {
   flex: 1 1 auto;
   min-height: 1px;
   padding: 1.25rem;
+}
+.view-contact-ul{
+  text-align: center;
 }
 
