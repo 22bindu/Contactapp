@@ -66,13 +66,21 @@ function ViewContact() {
                         <i class="fa-solid fa-building text-info mx-2 "></i>
                         {contacts.company}
                       </li>
-
+                      <div className="row my-3">
+                        
                       <Link
-                        className="btn btn-sm aqua-gradient"
+                        className="btn btn-sm aqua-gradient w-50"
                         to={"/Contactlist"}
                       >
                         Back to home
                       </Link>
+                      <Link
+                        className="btn btn-sm aqua-gradient w-50"
+                        to={`/EditContact/${contacts.id}`}
+                      >
+                        Edit
+                      </Link>
+                      </div>
                     </ul>
                   </div>
 

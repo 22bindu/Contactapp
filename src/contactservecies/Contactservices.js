@@ -1,5 +1,5 @@
-import axios from "axios";
 
+import axios from "axios";
 
 
 
@@ -26,12 +26,11 @@ import axios from "axios";
         static addContact(contact){
             return axios.post("http://localhost:3500/contacts",contact);
         }
-        static EditContact(Contactid , Contact){
-
-            return axios.put(`http://localhost:3500/contacts${Contactid}`, Contact)
+        // update contact
+        static UpdateContact(ContactId,contact){
             
+            return axios.put(`http://localhost:3500/contacts/${ContactId}`,contact)
         }
-
-
+              
 }
 export default Contactservices

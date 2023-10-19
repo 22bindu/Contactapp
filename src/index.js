@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { route } from 'fontawesome';
+import'../node_modules/react-toastify/dist/ReactToastify.css';
 import 'bootstrap/dist/css/bootstrap.css';
 //import 'mdbootstrap/css/mdb.css';
 import 'mdbootstrap/js/jquery.min.js';
@@ -15,11 +15,12 @@ import '@fortawesome/fontawesome-free/css/all.css';
 import Login from './components/login/Login';
 import Register from './components/login/Register';
 import Contactlist from './components/Contact/contactlist/Contactlist';
-
 import EditContact from './components/Contact/editContact/EditContact';
 import ViewContact from './components/Contact/viewContact/ViewContact';
 import AddContact from './components/Contact/createContact/AddContact';
-
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+<ToastContainer theme="colored"></ToastContainer>
 const router = createBrowserRouter([
 
   {
