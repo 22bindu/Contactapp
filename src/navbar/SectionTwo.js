@@ -30,7 +30,7 @@ let SectionTwo = () => {
                 ContactList Dashboard
               </a></Link>
               
-              <Link to={'/CreateContact'}>
+              <Link to={'/CreateContact/:Contactid'}>
               <a
                 className="btn btn-outline-light btn-md m-2"
                 href="/"

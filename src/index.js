@@ -15,9 +15,10 @@ import '@fortawesome/fontawesome-free/css/all.css';
 import Login from './components/login/Login';
 import Register from './components/login/Register';
 import Contactlist from './components/Contact/contactlist/Contactlist';
-import CreateContact from './components/Contact/createContact/CreateContact';
+
 import EditContact from './components/Contact/editContact/EditContact';
 import ViewContact from './components/Contact/viewContact/ViewContact';
+import AddContact from './components/Contact/createContact/AddContact';
 
 const router = createBrowserRouter([
 
@@ -43,11 +44,11 @@ const router = createBrowserRouter([
   },
  
   {
-    path:"/CreateContact",
-    element:<CreateContact/>
+    path:"/CreateContact/:Contactid",
+    element:<AddContact/>
   },
   {
-    path:"/EditContact",
+    path:"/EditContact/:Contactid",
     element:<EditContact/>
   },
   {
